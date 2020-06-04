@@ -1,0 +1,132 @@
+a{text-decoration: none; color: black;}
+input[type="checkbox"]{display: none;}
+body *{font-family: 'Nanum Gothic';/*400, 700 800*/}
+
+header div.head_top div nav ul li a,.section_head h2, section.company ul li h3,section.product > ul li,
+section.product ol li ul li h4 strong, section.product input, footer *{font-family: "Santana-Bold";}
+footer div div ul li h3{font-family: "Santana-Black";}
+
+header div.head_top{margin: 0 auto; width: 1200px;}
+section.company, section.product, section.gallery, section.service div.wrap, section.store{margin:0 auto 150px auto; width: 1200px;}
+header{margin-bottom: 150px;}
+
+
+.section_head{text-align: center;}
+.section_head h2{font-size: 22px; margin-bottom: 20px;}
+.section_head hr{width: 75px; height: 4px; background-color: #0159a4; border: none;  margin-bottom: 70px;}
+.section_head p{font-size: 18px; font-weight: 700; margin-bottom: 70px;}
+/* 각 section head */
+header div.head_top{height: 120px; display: flex; align-items: center; justify-content: space-between;}
+header div.head_top div nav ul{display: flex;}
+header div.head_top div nav ul li{margin-left: 50px;}
+header div.head_top div nav ul li a{color: black; font-size: 24px;}
+header div.head_top div nav ul li a:hover{color: #0159a4; border-bottom: 5px solid #0159a4; transition: 0.5s;}
+header ol > li.topMenuActive{height: 70px; line-height: 70px; transition: 0.5s; opacity: 1;}
+header ol{position: absolute; top: 120px; width: 100%; background-color: #ffdb00;}
+header ol > li{height: 0; opacity: 0; padding-left: 44.5%;}
+header ol li ul{display: flex;}
+header ol li ul li{margin-right: 60px;}
+header ol li ul li a{font-size: 22px; font-weight: 800; transition: 0.5s;}
+header video{width: 100%;}
+/* header fin */
+
+section.company{margin:0 auto 150px auto; width: 1200px;}
+section.company ul{display: flex; width: 100%;}
+section.company ul li{transition: 1s; overflow: hidden; flex: 1; position: relative;}
+section.company ul li:not(:nth-of-type(4)){margin-right: 30px;}
+section.company ul li img{margin-left: -140px; height: 160px; transition: 1s;}
+section.company ul li h3{height: 40px; width: 100%; text-align: center; transition: 1s; line-height: 40px; background-color: #0159a4; color: #ffdb00;}
+section.company ul li p{visibility: hidden; position: absolute; text-align: center; width: 535px; left: 0px; top: 30px; font-size: 19px; line-height: 35px; font-weight: 700;}
+section.company ul li p strong{font-weight: 800; font-size: 24px;}
+section.company ul li:hover{flex: 1 1 30%;}/* flex : 증가너비 감소너비 기본너비 */
+section.company ul li:hover img{margin-left: 0; height: 200px; transition: 1s; opacity: 0.3;}
+section.company ul li:hover h3{height: 0; transition: 1s;}
+section.company ul li:hover p{visibility: visible; transition-delay: 0.7s;}
+/* company fin */
+section.product{text-align: center;}
+section.product > ul{display: flex; justify-content: space-between; margin-bottom: 30px;}
+section.product > ul li{width: 200px; transition: 1s; text-align: center; height: 35px; line-height: 35px; cursor: pointer;}
+section.product > ul li.productMenuActive{background-color: #ffdb00; transition: 1s;}
+section.product > ul li:not(:last-of-type){border-right: 2px solid black;}
+section.product ol{margin-bottom: 70px; position: relative; height: 886.67px;}
+section.product ol > li{position: absolute; left: 0; top: 0; opacity: 0;}
+section.product ol > li.productActive{opacity: 1; transition: 1s;}
+section.product ol li ul::after{display: block; content: ''; visibility: hidden; clear: both;}
+section.product ol li ul li{float: left; text-align: center; margin-top: 25px;}
+section.product ol li ul li img{width: 80%; margin-bottom: 15px;}
+section.product ol li ul li h4{font-size: 18px; font-weight: 800; margin-bottom: 20px;}
+section.product ol li ul li p{font-size: 16px; font-weight: 700; margin-bottom: 10px;}
+section.product ol li ul li span{font-size: 14px; font-weight: 700;}
+section.product input{border: 2px solid black; font-size: 24px; background-color: white; width: 170px; height: 45px; transition: 0.5s;}
+section.product input:hover{border: 2px solid #0159a4; background-color: #0159a4; color: #ffdb00; transition: 0.5s;}
+/* product fin */
+section.gallery > div:nth-of-type(2){position: relative; perspective: 400px; transform-style: preserve-3d;}
+section.gallery > div:nth-of-type(2) ul{position: absolute; left: 0; top: 0;}
+section.gallery > div:nth-of-type(2) ul li{position: absolute; box-shadow: 0px 3px 19px 5px black;  transform: translateZ(5px); cursor: pointer;}
+section.gallery > div:nth-of-type(2) ul li:hover{border: 4px solid black; transform: translateZ(7px);}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(1){left: 400px; top: 87px;}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(2){left: 789px; top: 265px;}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(3){left: 658px; top: 533px;}
+section.gallery > div:nth-of-type(2) ul li:nth-of-type(4){left: 502px; top: 712px;}
+section.gallery > div:nth-of-type(2) ol li{border: 3px solid black; text-align: center; font-weight: 700;}
+section.gallery > div:nth-of-type(2) ol li h3{font-size: 20px; font-weight: 800;}
+section.gallery > div:nth-of-type(2) ol li p{font-size: 18px;}
+section.gallery > div:nth-of-type(2) ol li span:nth-of-type(1){font-size: 18px;}
+
+/* gallery fin*/
+
+section.service{background: url(../img/service_bg.jpg) no-repeat center center fixed; padding-top: 150px; color: white;}
+section.service ul::after{display: block; content: ''; visibility: hidden; clear: both;}
+section.service ul li{float: left; width: 33.33%; margin-bottom: 150px; text-align: center;}
+section.service ul li img{border-radius: 100%;margin-bottom: 30px;}
+section.service ul li h3{font-size: 18px; font-weight: 800; margin-bottom: 20px;}
+section.service ul li p{font-size: 14px; line-height: 26px; font-weight: 700;}
+/* service fin */
+
+section.store{text-align: center;}
+section.store div img{width: 80%;}
+section.store div:nth-of-type(2){position: relative;}
+section.store div > i{position: absolute; right: 145px; top: 40px; z-index: 6; opacity: 0;}
+section.store div > i.Active100{opacity: 1; transition: 0.5s;}
+section.store div ul li{color: white; position: absolute; left: 0; top: 0;z-index: 5; width: 80px; height: 80px;}
+section.store div ul li i{position: absolute; }
+section.store div ul li div.address{display: none;}
+section.store div ul li i:hover ~ div.address{display: block;}
+section.store div ul li.Active0{visibility: hidden;}
+
+section.store div ul li:nth-of-type(1){left: 370px; top: 80px;}/*li width: 80px; height: 80px; 위치*/
+section.store div ul li i{left: 15px; top: 20px;}/*map아이콘 위치*/
+section.store div ul li div.address{position: absolute; left: 15px; top: 55px;}/*주소 위치*/
+section.store div ul li:nth-of-type(2){left: 750px; top: 280px;}
+section.store div ul li:nth-of-type(3){left: 390px; top: 440px;}
+section.store div ul li:nth-of-type(4){left: 730px; top: 720px;}
+section.store div ul li div.address p{background-color: black; font-size: 16px; font-weight: 800; width: 130px; height: 30px; line-height: 30px; margin-bottom: 10px;}
+section.store div ul li div.address p:nth-of-type(2){font-size: 14px; width: 300px;}
+
+section.store div ol li img{position: absolute; left: 120px; top: 0; opacity: 0; transition: 0.5s;}
+section.store div ol li img.Active50{opacity: 0.6; transition: 0.5s;}
+section.store div ol li img.Active20{opacity: 0.2; transition: 0.5s;}
+section.store div ol li img.Active100{opacity: 1; transition: 0.5s;}
+
+section.store div ol li div{width: 420px; opacity: 0; padding: 30px; background-color: black; color: white;  font-weight: 700; text-align: left; position: absolute; left: 170px; bottom: 50px;}
+section.store div ol li div.addressActive{opacity: 1; z-index: 6;}
+section.store div ol li div p:nth-of-type(1){font-size: 20px; margin-bottom: 10px;}
+section.store div ol li div p:nth-of-type(2){font-size: 18px; margin-bottom: 20px;}
+section.store div ol li div p:nth-of-type(3){line-height: 24px; font-size: 14px; margin-bottom: 15px;}
+section.store div ol li div p strong{font-weight: 800; font-size: 16px;}
+section.store div ol li div span{font-size: 12px;}
+
+/* store fin */
+
+footer{background-color: #161616; color: white;}
+footer div.footer_top{padding-top:150px; display: flex; align-items: center; justify-content: space-between; margin: 0 auto 50px auto; width: 1200px;}
+footer div.footer_top h1 img{width: 120%;}
+footer div.footer_top div:nth-of-type(1) ul{display: flex; font-size: 18px; margin-bottom: 30px;}
+footer div.footer_top div ul li{width: 140px; border-right:1px solid white; border-left:1px solid white; text-align: center;}
+footer div.footer_top div address{margin-bottom: 10px; font-size: 16px;}
+footer div.footer_top div p{font-size: 16px;}
+footer div.footer_top div h2{font-size: 22px; margin-bottom: 40px;}
+footer hr{margin: 0 auto; width: 1200px; border: 2px dotted white;}
+
+footer div.footer_bottom{padding-bottom: 150px; margin: 50px auto 0 auto; width: 1200px; display: flex; justify-content: space-between;}
+footer div.footer_bottom p{line-height: 25px; font-size: 18px;}
